@@ -33,6 +33,7 @@ body {
 .overlay-content button {
   background-color: transparent;
   border: 3px solid #77287d;
+  border-radius: 8px;
   color: #77287d;
   cursor: pointer;
   font-size: 24px;
@@ -46,7 +47,7 @@ body {
 }
 
 #app {
-  background-color: rgba(119, 40, 125, 0.5);
+  background-color: #77287d;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-between;
@@ -59,18 +60,9 @@ body {
   display: flex;
 }
 
-.informasi {
-  padding: 0 12px;
-  width: 100%;
-}
-
-.informasi h1 {
-  text-align: center;
-}
-
 .kotak-posisi {
   align-items: center;
-  background-color: #77287d;
+  background-color: #923393;
   border: 1px solid #fff;
   color: #fff;
   display: flex;
@@ -109,4 +101,39 @@ body {
 
 .mobil-robot-section .gambar-mobil {
   background-image: url("assets/mobil-robot.png");
+}
+
+#game-control {
+  position: fixed;
+  text-align: center;
+  width: 200px;
+
+  /* Untuk ketengah */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#game-control button {
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  color: #77287d;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 12px 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+#game-control .keterangan {
+  color: #f89c1b;
+}
+
+#game-control button:hover {
+  text-decoration: underline;
+}
+
+#game-control .poin {
+  color: #f89c1b;
+  font-size: 64px;
 }
