@@ -72,6 +72,7 @@ body {
   width: 100px;
 }
 
+.kotak-start,
 .kotak-finish {
   background-image: url("assets/finish.jpg");
   background-size: cover;
@@ -91,7 +92,7 @@ body {
   left: 0;
   position: absolute;
   top: 0;
-  transition: top 0.3s ease-in-out;
+  transition: top 1s ease-in-out;
   width: 100px;
 }
 
@@ -114,6 +115,10 @@ body {
   transform: translate(-50%, -50%);
 }
 
+#game-control .keterangan {
+  color: #f89c1b;
+}
+
 #game-control button {
   background-color: #fff;
   border: none;
@@ -122,18 +127,13 @@ body {
   cursor: pointer;
   font-size: 18px;
   padding: 12px 24px;
-  transition: all 0.3s ease-in-out;
-}
-
-#game-control .keterangan {
-  color: #f89c1b;
 }
 
 #game-control button:hover {
   text-decoration: underline;
 }
 
-#game-control .poin {
+#game-control .angka {
   color: #f89c1b;
   font-size: 64px;
 }
