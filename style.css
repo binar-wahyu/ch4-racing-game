@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+#app {
+  background-color: rgba(119, 40, 125, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  margin: auto;
+  width: 600px;
+}
+
+.mobil-anda-section,
+.mobil-robot-section {
+  display: flex;
+}
+
+.informasi {
+  padding: 0 12px;
+  width: 100%;
+}
+
+.informasi h1 {
+  text-align: center;
+}
+
+.kotak-posisi {
+  align-items: center;
+  background-color: #77287d;
+  border: 1px solid #fff;
+  color: #fff;
+  display: flex;
+  font-size: 24px;
+  height: 100px;
+  justify-content: center;
+  width: 100px;
+}
+
+.kotak-finish {
+  background-image: url("assets/finish.jpg");
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+
+.jalan {
+  background-image: url("assets/road.jpg");
+  position: relative;
+  width: 100px;
+}
+
+.gambar-mobil {
+  background-size: cover;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: top 0.3s ease-in-out;
+  width: 100px;
+}
+
+.mobil-anda-section .gambar-mobil {
+  background-image: url("assets/mobil-anda.png");
+}
+
+.mobil-robot-section .gambar-mobil {
+  background-image: url("assets/mobil-robot.png");
+}
